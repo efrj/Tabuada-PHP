@@ -44,7 +44,7 @@
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php for ($y = 1; $y <= 10; $y++): ?>
-                    <span style="color: <?=$color?>;"><?=$y?></span> + <b><?=$x?></b> = <?=($y+$x)?><br>
+                    <span style="color: <?=$color?>;"><?=$x?></span> + <b><?=$y?></b> = <?=($y+$x)?><br>
                 <?php endfor; ?>
             </div>
         <?php endfor; ?>
@@ -87,7 +87,7 @@
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php for ($y = 1; $y <= 10; $y++): ?>
-                    <span style="color: <?=$color?>;"><?=$y?></span> x <b><?=$x?></b> = <?=($y * $x)?><br>
+                    <span style="color: <?=$color?>;"><?=$x?></span> x <b><?=$y?></b> = <?=($y * $x)?><br>
                 <?php endfor; ?>
             </div>
         <?php endfor; ?>
