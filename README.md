@@ -1,6 +1,6 @@
 # Tabuada PHP 
 
-Pequeno aplicativo Web de tabuada desenvolvido com o micro framework PHP Flight.
+Página web simples contendo as tabuadas de soma, subtração, multiplicação e divisão.
 
 A Tabuada PHP é um app muito simples e pode ser útil para iniciantes em desenvolvimento com a linguagem PHP.
 
@@ -20,6 +20,10 @@ O aplicativo pode ser rodado no Apache, Nginx ou qualquer outro servidor com sup
 
 **http://localhost:8000/**
 
-#### Documentação do Flight 
+### Rodando com o Docker:
 
-http://flightphp.com/
+**docker-compose up**
+
+#### Para visualizar no browser, digite:
+
+**http://localhost:8881/**
