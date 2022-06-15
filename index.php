@@ -1,23 +1,29 @@
 <?php
 
-require 'vendor/autoload.php';
+$title = 'Tabuada PHP';
 
-Flight::route('/', function(){
-    $title = 'Tabuada PHP';
-    $colors = [
-        '#cb3d00',
-        '#336699',
-        '#521515',
-        '#478244',
-        '#8f2525',
-        '#4e5b6e',
-        '#ff5a36',
-        '#004b26',
-        '#295398',
-        '#6f0000'
-    ];
+function randomColor(){
+    $rcolor = '#';
+    for($i=0;$i<6;$i++) {
+        $rNumber = rand(0,15);
+        switch ($rNumber) {
+            case 10:$rNumber = 'A';
+                break;
+            case 11:$rNumber = 'B';
+                break;
+            case 12:$rNumber = 'C';
+                break;
+            case 13:$rNumber = 'D';
+                break;
+            case 14:$rNumber = 'E';
+                break;
+            case 15:$rNumber = 'F';
+                break;
+        }
+        $rcolor .= $rNumber;
+    }
     
-    Flight::render('tabuada.php', ['colors' => $colors, 'title' => $title]);
-});
+    return $rcolor;
+}
 
-Flight::start();
+include('tabuada.php');
