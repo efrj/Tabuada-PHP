@@ -1,11 +1,12 @@
 <?php
 
-$title = 'Tabuada PHP';
+function randomColor(array $ignoredColors = [])
+{
+    $color = '#';
 
-function randomColor(){
-    $rcolor = '#';
-    for($i=0;$i<6;$i++) {
+    for($i=0; $i<6; $i++) {
         $rNumber = rand(0,15);
+
         switch ($rNumber) {
             case 10:$rNumber = 'A';
                 break;
@@ -20,10 +21,19 @@ function randomColor(){
             case 15:$rNumber = 'F';
                 break;
         }
-        $rcolor .= $rNumber;
+
+        $color .= $rNumber;
     }
     
-    return $rcolor;
+    if (count($ignoredColors) > 0) {
+        if (in_array($color, $ignoredColors)) {
+            randomColor();
+        }
+    }
+
+    return $color;
 }
 
-include('tabuada.php');
+$ignoredColors = ['#FFFFFF', '#CCCCCC', '#65CEA5', '#9E12C1', '#ECDAD0', '#EFFCDB', '#D597B3', '#E5B89B', '#C41CF9', '#DB26EA', '#7BF8E5', '#FAE96E'];
+
+include('view.php');
