@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title><?=$title?></title>
+<title>Tabuada PHP</title>
 <meta charset="utf-8" />
 
 <link href="https://stackpath.bootstrapcdn.com/bootswatch/3.4.1/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-+UEyBtcMUzEVPU/VzsSuQxSAdP59Rg8OU5jCsE89v4bKCKi/0NqVy479qQMAmZ4x" crossorigin="anonymous">
@@ -22,7 +22,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><span class="fa fa-calculator"></span> <?=$title?></a>
+            <a class="navbar-brand" href="/"><span class="fa fa-calculator"></span> Tabuada PHP</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -40,7 +40,7 @@
     </div>
     <div class="row">
         <?php for ($x = 1; $x <= 10; $x++): ?>
-            <?php $color = randomColor(); ?>
+            <?php $color = randomColor($ignoredColors); ?>
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php for ($y = 1; $y <= 10; $y++): ?>
@@ -58,7 +58,7 @@
     </div>
     <div class="row">
         <?php for ($x = 1; $x <= 10; $x++): ?>
-            <?php $color = randomColor(); ?>
+            <?php $color = randomColor($ignoredColors); ?>
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php $line = 0 ?>
@@ -83,7 +83,7 @@
     </div>
     <div class="row">
         <?php for ($x = 1; $x <= 10; $x++): ?>
-            <?php $color = randomColor(); ?>
+            <?php $color = randomColor($ignoredColors); ?>
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php for ($y = 1; $y <= 10; $y++): ?>
@@ -101,7 +101,7 @@
     </div>
     <div class="row">
         <?php for ($x = 1; $x <= 10; $x++): ?>
-            <?php $color = randomColor(); ?>
+            <?php $color = randomColor($ignoredColors); ?>
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php for ($y = 1; $y <= 10; $y++): ?>
