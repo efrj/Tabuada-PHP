@@ -35,12 +35,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Tabuada de Adição</h2>
+            <?php $color = randomColor($ignoredColors); ?>
+            <h2 style="color: <?=$color?>;">Tabuada de Adição</h2>
         </div>
     </div>
     <div class="row">
         <?php for ($x = 1; $x <= 10; $x++): ?>
-            <?php $color = randomColor($ignoredColors); ?>
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php for ($y = 1; $y <= 10; $y++): ?>
@@ -53,12 +53,12 @@
 
     <div class="row top-box">
         <div class="col-md-12">
-            <h2>Tabuada de Subtração</h2>
+            <?php $color = randomColor($ignoredColors); ?>
+            <h2 style="color: <?=$color?>;">Tabuada de Subtração</h2>
         </div>
     </div>
     <div class="row">
         <?php for ($x = 1; $x <= 10; $x++): ?>
-            <?php $color = randomColor($ignoredColors); ?>
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php $line = 0 ?>
@@ -78,12 +78,12 @@
 
     <div class="row top-box">
         <div class="col-md-12">
-            <h2>Tabuada de Multiplicação</h2>
+            <?php $color = randomColor($ignoredColors); ?>
+            <h2 style="color: <?=$color?>;">Tabuada de Multiplicação</h2>
         </div>
     </div>
     <div class="row">
         <?php for ($x = 1; $x <= 10; $x++): ?>
-            <?php $color = randomColor($ignoredColors); ?>
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php for ($y = 1; $y <= 10; $y++): ?>
@@ -96,12 +96,12 @@
 
     <div class="row top-box">
         <div class="col-md-12">
-            <h2>Tabuada de Divisão</h2>
+            <?php $color = randomColor($ignoredColors); ?>
+            <h2 style="color: <?=$color?>;">Tabuada de Divisão</h2>
         </div>
     </div>
     <div class="row">
         <?php for ($x = 1; $x <= 10; $x++): ?>
-            <?php $color = randomColor($ignoredColors); ?>
             <div class="col-md-2 box-table">
                 <h4 style="color: <?=$color?>;">Número <?=$x?></h4>
                 <?php for ($y = 1; $y <= 10; $y++): ?>
