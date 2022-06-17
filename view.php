@@ -26,8 +26,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="https://github.com/efrj/Tabuada-PHP">Fork me on GitHub</a></li>
+                <li class="active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#" onclick="window.print(); return false;"><i class="fa fa-print"></i> Imprimir</a></li>
+                <li><a href="https://github.com/efrj/Tabuada-PHP"><i class="fa fa-github"></i> GitHub</a></li>
             </ul>
         </div>
     </div>
