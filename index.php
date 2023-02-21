@@ -66,7 +66,7 @@
                         <?php if ($result >= 0): ?>
                             <?php $line++ ?>
                             <?php if ($line <= 10): ?>
-                                <span class="text-primary"><?=$y?></span> - <b><?=$x?></b> = <?=$result?><br>
+                                <b><?=$y?></b> - <span class="text-primary"><?=$x?></span> = <?=$result?><br>
                             <?php endif; ?>
                         <?php endif; ?>
                     <?php endfor; ?>
@@ -102,7 +102,7 @@
                 <div class="col-md-2 box-table">
                     <h4 class="text-danger">Número <?=$x?></h4>
                     <?php for ($y = 1; $y <= 10; $y++): ?>
-                        <span class="text-danger"><?=($y * $x)?></span> : <b><?=$x?></b> = <?=$y?><br>
+                        <b><?=($y * $x)?></b> : <span class="text-danger"><?=$x?></span> = <?=$y?><br>
                     <?php endfor; ?>
                 </div>
             <?php endfor; ?>
